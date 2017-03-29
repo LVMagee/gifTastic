@@ -18,14 +18,14 @@ function displayGifButtons(){
 
 function addNewButton(){
     $("#addGif").on("click", function(){
-    var hero = $("#hero-input").val().trim();
-    if (hero == ""){
-       return false; 
-     }
-    superHeros.push(hero);
-    displayGifButtons();
-    return false;
-    });
+        var hero = $("#hero-input").val().trim();
+        if (hero == ""){
+           return false; 
+       }
+       superHeros.push(hero);
+       displayGifButtons();
+       return false;
+   });
 }
 
 function displayGifs(){
@@ -40,15 +40,15 @@ function displayGifs(){
         // console.log(response); 
         $("#gifsView").empty(); 
         var results = response.data; 
-      
+        
         for (var i=0; i<results.length; i++){
 
             var gifDiv = $("<div>"); 
             gifDiv.addClass("gifDiv");
-           
+            
             var gifRating = $("<p>").text("Rating: " + results[i].rating);
             gifDiv.append(gifRating);
-           
+            
             var gifImage = $("<img>");
             gifImage.attr("src", results[i].images.fixed_height_small_still.url); 
             gifImage.attr("data-still",results[i].images.fixed_height_small_still.url); 
@@ -56,7 +56,7 @@ function displayGifs(){
             gifImage.attr("data-state", "still"); 
             gifImage.addClass("image");
             gifDiv.append(gifImage);
-           
+            
             $("#gifsView").prepend(gifDiv);
         }
     });
