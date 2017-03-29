@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function() {
 
 // Array place holder var
 var superHeros = ["IronMan", "DeadPool", "Hulk", "WonderWoman", "SuperMan", "AntMan", "TheFlash", "SpiderMan", "AquaMan", "Thor"];
