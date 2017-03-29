@@ -1,0 +1,40 @@
+body{
+	padding-top: 80px;
+	background: url("../images/heros.jpg");
+	background-size: 100%;
+    font-family: 'Revalia', cursive;
+    color: black;
+}
+* {
+	box-sizing: border-box;
+}
+ h1 {
+ 	font-size: 48px;
+    text-align: center;
+    text-shadow: 2px 2px 5px #A8131C;
+}
+
+img { 
+    height: 150px;
+    width: 150px;
+}
+.btn {
+    margin: 3px;
+    background-color: #999999;
+    border-color: #0737F5;
+    color: #A8131C;
+}
+.gifDiv{
+    float: left;
+    margin: 3px;
+}
+.container {
+	background-image: url(../images/hero2.jpeg);
+	padding: 20px;
+	border-radius: 8px;
+}
+
+
+
+
+
