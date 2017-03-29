@@ -9,7 +9,7 @@ function displayGifButtons(){
     for (var i = 0; i < superHeros.length; i++){
         var gifButton = $("<button>");
         gifButton.addClass("hero");
-        gifButton.addClass("btn btn-primary")
+        gifButton.addClass("btn")
         gifButton.attr("data-name", superHeros[i]);
         gifButton.text(superHeros[i]);
         $("#gifButtonsView").append(gifButton);
