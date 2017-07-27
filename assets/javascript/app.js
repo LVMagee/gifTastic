@@ -1,17 +1,17 @@
 $(document).ready(function() {
 
 // Array place holder var
-var superHeros = ["IronMan", "DeadPool", "Hulk", "WonderWoman", "SuperMan", "AntMan", "TheFlash", "SpiderMan", "AquaMan", "Thor"];
+var superHeroes = ["IronMan", "DeadPool", "Hulk", "WonderWoman", "SuperMan", "AntMan", "TheFlash", "SpiderMan", "AquaMan", "Thor"];
 
 //Functions to create buttons and display gifs
 function displayGifButtons(){
     $("#gifButtonsView").empty(); 
-    for (var i = 0; i < superHeros.length; i++){
+    for (var i = 0; i < superHeroes.length; i++){
         var gifButton = $("<button>");
         gifButton.addClass("hero");
         gifButton.addClass("btn")
-        gifButton.attr("data-name", superHeros[i]);
-        gifButton.text(superHeros[i]);
+        gifButton.attr("data-name", superHeroes[i]);
+        gifButton.text(superHeroes[i]);
         $("#gifButtonsView").append(gifButton);
     }
 }
@@ -22,7 +22,7 @@ function addNewButton(){
         if (hero == ""){
            return false; 
        }
-       superHeros.push(hero);
+       superHeroes.push(hero);
        displayGifButtons();
        return false;
    });
